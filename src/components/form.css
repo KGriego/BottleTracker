@@ -1,0 +1,30 @@
+.form-wrapper {
+    min-width: calc(100vw - 250vw);
+    max-width: calc(100vw - 250vw);
+    min-height: calc(100vh - 80px);
+    padding: 15px 0 15px 15px;
+    
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+.form-error-text {
+    color: red
+}
+
+.input {
+    border-radius: 2rem;
+    font-size: 2rem;
+
+}
+
+.select {
+    border-radius: 2rem;
+}
+
+.submit-btn {
+    height: 40px;
+    font-weight: 700;
+    font-size: 2rem;
+}
