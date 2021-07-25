@@ -1,16 +1,22 @@
 .form-wrapper {
-    min-width: calc(100vw - 250vw);
+    /* min-width: calc(100vw - 250vw);
     max-width: calc(100vw - 250vw);
-    min-height: calc(100vh - 80px);
+    min-height: calc(100vh - 80px); */
     padding: 15px 0 15px 15px;
-    
+
     display: flex;
     flex-direction: column;
     align-content: flex-start;
 }
 
 .form-error-text {
-    color: red
+    color: red;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    word-wrap: none;
+
+
 }
 
 .input {

@@ -13,7 +13,6 @@ const Form = () => {
 
   return (
     <div className="form-wrapper">
-      
       <form onSubmit={handleSubmit(onSubmit)}>
         <input
           className="input"
@@ -25,16 +24,16 @@ const Form = () => {
             minLength: 3,
           })}
         >
-          {/* <p className="form-error-text">
-            {errors.firstName?.type === "required" && "A name is required"}
-          </p> */}
         </input>
+          <p className="form-error-text">{errors.firstName && <span>A name is required</span>}</p>
         <select className="select" {...register("Amount", { required: true })}>
           <option value="5oz">5oz</option>
           <option value="10oz">10oz</option>
           <option value="15oz">15oz</option>
         </select>
-        <button onClick={handleSubmit(onSubmit)} className="submit-btn">Submit</button>
+        <button onClick={handleSubmit(onSubmit)} className="submit-btn">
+          Submit
+        </button>
       </form>
     </div>
   )
